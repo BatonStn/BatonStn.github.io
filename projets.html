@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta type="description" content="Portfolio Jeu Vidéo">
+        <title>SANTONI BAPTISTE Projets</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="boxed">
+                <div class="flex align-center space-between">
+                    <button onclick="openMenu()" class="header-menu-mobile">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </button>
+                    <ul class = "header-menu">
+                        <li><a href ="index.html"> Accueil </a></li>
+                        <li><a href ="index.html#Apropos"> À propos </a></li>
+                        <li><a href ="index.html#Competences"> Compétences </a></li>
+                        <li><a href ="index.html#Projets"> Projets </a></li>
+                        <li><a href ="index.html#Contact"> Contact </a></li>
+                        <li><a href ="docs/CV_Baptiste_Santoni.pdf" target="blank"> CV </a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="section dark">
+            <div class="boxed text-center">
+                <h2>Projets</h2>
+                <div class="flex gap40 wrap element-center">
+                    <div class="w25 wm75 projet">
+                        <a href="#MysteryDungeon">
+                            <img src="img/MysteryDungeon.png">
+                            <h3>Mystery Dungeon</h3>
+                        </a>
+                    </div>
+                    <div class="w25 wm75 projet">
+                        <a href="#VTO">
+                            <img src="img/VTO.png">
+                            <h3>Virtual Try-On</h3>
+                        </a>
+                    </div>
+                    <div class="w25 wm75 projet">
+                        <a href="#RhythmShapes">
+                            <img src="img/RhythmShapes.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="MysteryDungeon">
+            <div class="boxed">
+                <div>
+                    <div class="text-center">
+                        <h2>Mystery Dungeon</h2>
+                    </div>
+                    <div class="text-center">
+                        <p> 
+                            Mystery Dungeon est un projet en cours, développée sur Unity en solo. Le but du jeu est de gravir les différents étages d'un donjon.
+                            Ces étages sont en fait des maps 2D générées aléatoirement, composées de pièces et de couloirs qui les relient. <br />
+                            Les enjeux de ce projet sont la génération aléatoire de maps cohérentes, la mise en place d'une IA ennemie et la conception d'un système de combat <br/><br/>
+                        </p>
+                        <p class="flotte w20">
+                            <img src="img/rawmap.png" class="w60"/>
+                        </p>
+                        <p>
+                            A l'heure actuelle, un générateur de maps fonctionnel a été créé.
+                            Un travail a été effectué pour qu'il soit simple de se déplacer dans les couloirs (peu de zigzag), que les pièces soient toutes liées au moins une fois au
+                            réseau de couloirs, et que les paramètres de génération de maps (taille de la map, taille des pièces, espacement entre les pièces, ...) soient accessibles
+                            pour pouvoir faire des étages complètement différents. <br /><br />
+                        </p>
+                        <p class="flotte-right w20">
+                            <img src="img/zoomTiledMap.png" class="w60"/>
+                        </p>
+                        <p>
+                            De plus, une TileMap a été mis en place.
+                            La TileMap utilise une image type contenant les différentes textures que l'on retrouve dans le donjon. 
+                            En découpant cette image on applique automatiquement les texture sur chaque carré de la map, et cela en fonction de leur entourage.
+                            La TileMap se paire parfaitement avec des maps générées aléatoirement. <br /><br />
+                        </p>
+                        <p>
+                            Les prochaines étapes pour ce projet sont la création de textures plus jolies avec des thèmes précis (lave, forêt, eau, ...), 
+                            puis la conception d'un système de combat et enfin la mise en place d'une IA ennemie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section dark" id="VTO">
+            <div class="boxed">
+                <div>
+                    <div class="text-center">
+                        <h2>Virtual Try-On</h2>
+                    </div>
+                    <div class="text-center">
+                        <p> 
+                            Le Virtual Try-On, ou essayage virtuel est un ensemble de technologies permettant d'essayer un vêtement, 
+                            un accessoire ou de se mettre en situation d'usage d'un produit en le projetant à l'aide d'une interface en RA. <br/>
+                            Ce projet, créé sur Unity en solo correspond au projet principal de mon stage de fin d'études. 
+                            Le but était de porter l'essayage virtuel de lunettes d'une version web à une version Unity. <br/><br/>
+                        </p>
+                        <p>
+                            <img src="img/glasses.jpg" class="w20"/><br/><br/>
+                        </p> 
+                        <p> 
+                            Cet essayage comporte principalement la recherche des montures dans une base de données, la création de montures en direct, 
+                            puis la reconnaissance faciale permettant de les placer. <br/>
+                            Je ne peux pas parler des procédés utilisées par l'entreprise, mais ce projet m'a permis de familiariser avec plusieurs technologies 
+                            comme le fonctionnement des shaders, la réalité augmentée, la création de modèles 3D, les requêtes web depuis Unity, les Events C#, 
+                            les packages Unity, les builds sur Android, et d'autres encore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="RhythmShapes">
+            <div class="boxed">
+                <div>
+                    <div class="text-center">
+                        <h2>RhythmShapes</h2>
+                    </div>
+                    <div class="text-center">
+                        <p> 
+                            RhythmShapes est un projet de dernière année d'études qui représente la collaboration entre 5 élèves au cours de l'année scolaire 2022/2023.
+                            Ses atouts principaux sont une IA d'analyse musicale génératrice de niveaux et un éditeur permettant aux joueurs de modifier des niveaux.<br/><br/>
+                        </p>
+                        <p class="flotte w20">
+                            <img src="img/RSmap.png" class="w60"/>
+                        </p>
+                        <p>
+                            L'idée de ce projet, dont je suis à l'origine, était de mêler formes et couleurs dans une ambiance néon pour créer un jeu de rythme.<br />
+                            C'est de cela que découle la map: des formes partent du centre et suivent un chemin particulier dépendant de leur couleur. <br /><br />
+                        </p>
+                        <p>
+                            Au-delà du projet en lui-même, l'expérience principale que je voudrais mettre en avant est celle du travail de groupe.<br />
+                            Celui-ci se basait sur la méthode agile, avec des réunions régulières avec l'encadrant pour voir le suivi du travail, 
+                            parler des problèmes et des objectifs restants. <br />
+                            En plus de cela, des réunions d'équipe hebdomadaires permettaient de se distribuer les tâches, faire du bug report et trouver des solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="js/app.js"></script>
+</html>
