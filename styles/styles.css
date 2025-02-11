@@ -282,6 +282,10 @@ a {
     font-size:1.2rem;
 }
 
+.value a{
+    color: white;
+}
+
 header{
     position: fixed;
     top:0;
